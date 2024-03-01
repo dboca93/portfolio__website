@@ -42,3 +42,20 @@ img__C.addEventListener('mouseout', function() {
     img__S.style.width = ''; 
     img__S.style.height = ''; 
 })
+
+
+function submitForm() {
+    // Assuming 'form' is the ID of your form
+    var form = document.getElementById("form");
+    
+    // Perform any validation if needed
+    
+    // Simulating form submission
+    // Replace this with your actual form submission process
+    // For demonstration, here we're displaying a styled notification
+    var notification = document.getElementById("notification");
+    notification.style.display = "block";
+    
+    // Prevent the default form submission behavior
+    return false;
+  }
