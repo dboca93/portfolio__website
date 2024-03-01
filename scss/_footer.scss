@@ -41,7 +41,8 @@ footer {
   .social__links {
     margin-left: auto;
     // outline: $tool;
-    width: max(150px, 22.5%);
+    width: calc(15% + 1vw);
+    max-width: 230px;
 
     ul {
         display: flex;

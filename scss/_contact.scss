@@ -16,16 +16,21 @@
 .container {
 
   .notification {
-    background-color: #f2f2f2;
+    background-color: $white__background;
+    font-family: $font__second;
     color: #333;
     padding: 10px;
     border-radius: 5px;
+    text-decoration: underline; 
+    text-decoration-color: $purple__shade__text;
+    text-decoration-thickness: 2px; 
     border: 1px solid #ccc;
     display: none; /* Initially hidden */
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    top: 15vh;
+    left: calc(50% - 7.6563rem);
     z-index: 9999;
+    width: 15.3125rem; 
   }
 
 
@@ -96,6 +101,10 @@
       font-size: 22px;
       padding: 0;
       background: $black__main__text;
+
+      &:hover {
+        background-color: $purple__shade__text;
+      }
     }
   }
 }

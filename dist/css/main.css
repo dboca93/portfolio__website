@@ -317,7 +317,8 @@ footer .left__youtube a img {
 }
 footer .social__links {
   margin-left: auto;
-  width: max(150px, 22.5%);
+  width: calc(15% + 1vw);
+  max-width: 230px;
 }
 footer .social__links ul {
   display: flex;
@@ -364,16 +365,21 @@ footer .social__links ul li:nth-child(1) a img {
   flex-direction: column;
 }
 .container .notification {
-  background-color: #f2f2f2;
+  background-color: rgb(252, 252, 253);
+  font-family: "Anta", sans-serif;
   color: #333;
   padding: 10px;
   border-radius: 5px;
+  text-decoration: underline;
+  text-decoration-color: rgb(110, 6, 242);
+  text-decoration-thickness: 2px;
   border: 1px solid #ccc;
   display: none; /* Initially hidden */
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  top: 15vh;
+  left: calc(50% - 7.6563rem);
   z-index: 9999;
+  width: 15.3125rem;
 }
 .container h1 {
   color: rgb(36, 38, 47);
@@ -420,4 +426,7 @@ footer .social__links ul li:nth-child(1) a img {
   font-size: 22px;
   padding: 0;
   background: rgb(36, 38, 47);
+}
+.container form button:hover {
+  background-color: rgb(110, 6, 242);
 }/*# sourceMappingURL=main.css.map */
