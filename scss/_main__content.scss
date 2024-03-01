@@ -1,0 +1,103 @@
+.main__grid {
+    min-height: 80vh;
+    border-bottom: $tool; 
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px calc(10px + 0.5vw) 0px; 
+
+    article {
+        
+        justify-self: center;
+        display: flex;
+        align-self: center; 
+        flex-direction: column;
+        gap: calc(2px + 0.5vw); 
+
+        h2 {
+            font-family: $font__second;
+            font-size: clamp(12px, 3vw, 22px + 1vw);
+        }
+
+        h1 {
+            span:nth-child(1) {
+                display: inline;
+                font-family: $font__first;
+                color: $purple__shade__text;
+                font-size: clamp(38px, 4vw, $h1__Desktop);
+            }
+
+            span:nth-child(2) {
+                display: inline;
+                font-family: $font__first;
+                color: $black__main__text;
+                font-size: clamp(38px, 4vw, $h1__Desktop);
+            }
+            .mh__two {
+                display: block;
+                font-family: $font__first;
+                font-size: clamp(38px, 4vw, $h1__Desktop);
+            }
+        }
+
+        p {
+            font-family: $font__second;
+            font-size: clamp(12px, 4vw, 24px);
+            max-width: 650px;
+            text-align: justify;
+            line-height: 1.5;
+
+            span {
+                font-weight: bold; 
+                display: block;
+                font-style: italic;
+                margin-top: 5px;
+            }
+        }
+
+
+
+        .image__container {
+            img {
+                max-width: 380px;
+                outline: 3px solid black; 
+            }
+        }
+    }
+
+    .grid__right__container {
+        display: grid;
+        place-items: center; 
+     
+
+        .main__img__container {
+            border: 1px solid $purple__shade__text;
+            border-radius: 50%;
+            width: 580px;
+            height: 580px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                img {
+                    filter: grayscale(0%);
+                }
+            }
+    
+            img {
+                width: 480px;
+                height: 480px;
+                display: block;
+                border-radius: 50%;
+                filter: grayscale(100%);
+                transition: all 3s ease;
+
+      
+            }
+
+
+        }
+    }
+
+}

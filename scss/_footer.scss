@@ -1,0 +1,55 @@
+footer {
+  padding: 5px 37.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 10vh;
+
+  .social__links {
+    margin-left: auto;
+    // outline: $tool;
+    width: max(150px, 22.5%);
+
+
+
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+      li {
+        a {
+            width: 30px;
+            height: 30px; 
+            display: inline-block;
+
+          img {
+            width: 100%; 
+            height: 100%; 
+            // height: 50px; ?
+            object-fit: cover;
+            display: block;
+
+            
+          &:hover {
+            cursor: pointer;
+            scale: 1.15;
+           }
+          }
+
+
+        }
+
+        &:nth-child(1) {
+            a {
+                img {
+                    // scale: 1.35;
+                    margin-right: 10px;
+                }
+            }
+        }
+      }
+    }
+  }
+}

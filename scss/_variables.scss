@@ -1,0 +1,37 @@
+/* here we want: 
+background colors; 
+colors; 
+button sizes;
+header text sizes (use clamp later)
+para text sizes (use clamp later)
+tool--error
+fonts*/
+
+/*background__color */
+$white__background: rgb(252, 252, 253); 
+
+/*text color*/
+$gray__header__text: rgb(78, 82, 90); 
+$purple__shade__text: rgb(110, 6, 242); 
+// #6E06F2
+
+$black__main__text: rgb(36, 38, 47); 
+// #24262F
+
+$button__Width: 8.8837rem; 
+$button__Height: 2.5rem; 
+
+$h1__Desktop: 90px; 
+$h1__Tablet: 72px; 
+$h1__Mobile: 58px; 
+
+$h2__Large: 56px; 
+$h2__Small: 46px; 
+
+$para__text__hero: 24px; 
+$para__beneath__h3: 18px; 
+
+$tool: 1px solid black; 
+
+$font__first: "Orbitron", sans-serif; 
+$font__second: "Anta", sans-serif; 
