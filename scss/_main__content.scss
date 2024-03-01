@@ -1,7 +1,5 @@
 .main__grid {
-    min-height: 80vh;
-    border-bottom: $tool; 
-
+    min-height: 75vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 10px calc(10px + 0.5vw) 0px; 

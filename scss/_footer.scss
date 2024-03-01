@@ -4,14 +4,44 @@ footer {
   align-items: center;
   justify-content: center;
   min-height: 10vh;
+  position: fixed;
+  width: 100%; 
+  bottom: 0; 
+  border-top: $tool; 
+
+  .left__youtube {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    // outline: $tool; 
+
+    a {
+      color: $black__main__text; 
+      font-family: $font__second;
+      // outline: 5px solid red; 
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: clamp(24px, 3.5vw, 36px); 
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      img {
+        margin-right: 10px;
+      }
+
+    }
+  }
 
   .social__links {
     margin-left: auto;
     // outline: $tool;
     width: max(150px, 22.5%);
-
-
-
 
     ul {
         display: flex;

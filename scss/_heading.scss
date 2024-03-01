@@ -17,6 +17,12 @@ header {
     height: $button__Height;
 
     a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+      }
+
       span {
         color: $purple__shade__text;
       }

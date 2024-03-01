@@ -143,9 +143,13 @@ header .logo {
   height: 2.5rem;
 }
 header .logo a {
+  text-decoration: none;
   font-family: "Orbitron", sans-serif;
   font-size: 28px;
   color: rgb(36, 38, 47);
+}
+header .logo a:hover {
+  text-decoration: none;
 }
 header .logo a span {
   color: rgb(110, 6, 242);
@@ -203,8 +207,7 @@ header .contact:hover .d__none {
 }
 
 .main__grid {
-  min-height: 80vh;
-  border-bottom: 1px solid black;
+  min-height: 75vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 10px calc(10px + 0.5vw) 0px;
@@ -285,6 +288,32 @@ footer {
   align-items: center;
   justify-content: center;
   min-height: 10vh;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  border-top: 1px solid black;
+}
+footer .left__youtube {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+footer .left__youtube a {
+  color: rgb(36, 38, 47);
+  font-family: "Anta", sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: clamp(24px, 3.5vw, 36px);
+}
+footer .left__youtube a:hover {
+  text-decoration: underline;
+}
+footer .left__youtube a img {
+  margin-right: 10px;
 }
 footer .social__links {
   margin-left: auto;
@@ -321,8 +350,7 @@ footer .social__links ul li:nth-child(1) a img {
 
 .contact__main {
   min-width: 300px;
-  min-height: 80vh;
-  border-bottom: 1px solid black;
+  min-height: 75vh;
   display: flex;
   align-items: center;
   justify-content: center;
