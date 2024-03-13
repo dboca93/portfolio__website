@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/css/main.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <title>Dilhan Boca Dev Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <script src="live.js" defer></script>
+    <script src="about.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <span>d</span>boca.
+            </a>
+        </div>
+        <nav>
+            <ul class="falling__links">
+                <li class="proj">
+                    <a href="projects.html">Projects</a>
+                </li>
+                <li class="about">
+                    <a href="about.html">About Me</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="contact.html" class="contact">
+            <img src="/img/icons8-communicate-32.png" alt="" class="h__none">
+            <img src="/img/icons8-communicate-32__white.png" alt="" class="d__none">
+            Contact</a>
+
+        <div class="hamburger__menu">
+            <div class="icon__container">
+                <svg class="with-icon_icon__MHUeb" data-testid="geist-icon" fill="none" height="24"
+                    shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"
+                    style="color:var(--geist-foreground);width:33px;height:33px">
+                    <path d="M21 10H7" />
+                    <path d="M21 6H3" />
+                    <path d="M21 14H3" />
+                    <path d="M21 18H7" />
+                </svg>
+
+
+                <ul class="dropdown__menu">
+                    <li><a href="projects.html">Projects</a>
+
+                        <svg id="cross" onclick="closeDropdown()"  class="with-icon_icon__MHUeb" data-testid="geist-icon" fill="none" height="24"
+                            shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"
+                            style="color:var(--geist-foreground);width:38px;height:38px">
+                            <circle cx="12" cy="12" r="10" fill="var(--geist-fill)" />
+                            <path d="M15 9l-6 6" stroke="var(--geist-stroke)" />
+                            <path d="M9 9l6 6" stroke="var(--geist-stroke)" />
+                        </svg>
+
+                    </li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main class="main__about">
+        <section class="about__container">
+            <h1 class="roll">About Me.</h1>
+            <h2 class="mood">Animations built with GSAP!🤣</h2>
+        </section>
+
+        
+        <div class="nav__container">
+            <ul>
+                <li><a href="#professional-summary">Professional Summary</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work-history">Work History</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+            </ul>
+        </div>
+ 
+        <section class="carousel__slide">
+            <div class="kard" id="professional-summary">
+                <div class="kard__flex__wrapper pro__kard">
+                <h3>Professional Summary</h3>
+                <p>Born and raised in Melbourne, I live close to the CBD.
+                    Currently studying Website Development online, with the intention
+                    of building e-commerce websites for small businesses. Learning 
+                    the MERN Stack is my ultimate goal. I'm formerly a small business owner and restaurant manager. 
+                    Currently, I'm seeking part-time work from home, 
+                    to allow me some flexibility in lifestyle. If you've got some time, 
+                    check out my youtube channel 
+                    <a href="" target="_blank"> <span>DB Codes</span> </a>where I chronicle some handy things I've 
+                    learnt while studying Website Development. To download a 
+                printable, pdf-verion of my resume please click this link: <a href="pdf/resume-page-snowy-....pdf" target="_blank">Resume</a>
+            </p>
+
+            </div>
+            </div>
+
+            <div class="kard" id="skills">
+                <div class="kard__flex__wrapper skill__c">
+                <h3>Skills</h3>
+                <ul class="left__list">
+                    <li>Fast Typing (72 wpm)</li>
+                    <li>Interpersonal Skills</li>
+                    <li>Analytical Thinker</li>
+                    <li>Microsoft Office</li>
+                    <li>Native English Speaker</li>
+                </ul>
+                <ul class="right__list">
+                    <li>HTML / CSS / Javascript</li>
+                    <li>Responsive Web Design</li>
+                    <li>VS Code</li>
+                    <li>SASS</li>
+                    <li>Github</li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="kard" id="work-history">
+                <div class="kard__flex__wrapper work__kard">
+                    <h3>Work History</h3>
+                    <h4>March 2014 - December 2018</h4>
+                    <h5>Arabesque Restaurant Elsternwick - Restaurant Manager,
+                        Elsternwick, VIC</h5>
+                    <ul class="work__ul">
+                        <li>Ran one of Melbourne's most popular Middle Eastern
+                            restaurants.</li>
+                        <li>Implemented cost-saving measures through streamlined
+                            processes, efwcient scheduling, and strategic vendor
+                            negotiations</li>
+                            <li>Ran successful social media campaigns</li>
+                    </ul>
+
+                    <h4>February 2019 - October 2023</h4>
+                    <h5>Self-Employed - Private Chauffeur, Melbourne, VIC</h5>
+                    <ul class="work__ul">
+                        <li>Built and maintained positive relationships with passengers by
+                            providing friendly and professional service</li>
+                        <li>Private chauffeur for many distinguished clients.</li>
+                        <li>Ran my own business successfully.</li>
+                    </ul>
+                </div>
+   
+            </div>
+
+            <div class="kard" id="hobbies">
+                <div class="kard__flex__wrapper work__kard">
+                <h3>Hobbies</h3>
+                <p>I enjoy long walks, taking my Border Collie-Kelpie cross to the park and
+                    watching English Premier League Football. I also have 
+                a passion for languages, and am trying to learn 
+            Arabic and Turkish. </p>
+            </div>
+            </div>
+
+
+        </section>
+        
+    </main>
+
+    
+    <footer class="index__footer">
+        <nav class="left__youtube">
+            <a href="">
+                <img src="img/icons8-youtube-100.png" alt="Youtube Link">
+                Check out my coding channel on Youtube!
+            </a>
+        </nav>
+
+        <nav class="social__links">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="img/github.png" alt="Github">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.codewars.com/users/dboca93">
+                        <img src="img/4691329_codewars_icon.png" alt="">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img src="img/linkedin.png" alt="Linkedin">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img src="img/twitter.png" alt="Twitter">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+
+
+
+
+</body>
+</html>

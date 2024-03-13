@@ -3,10 +3,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 10vh;
-  position: fixed;
   width: 100%; 
-  bottom: 0; 
   border-top: $tool; 
 
   .left__youtube {
@@ -25,14 +22,16 @@ footer {
       align-items: center;
       justify-content: center;
       text-decoration: none;
-      font-size: clamp(24px, 3.5vw, 36px); 
+      font-size: clamp(18px, 3.5vw, 26px); 
+      
 
       &:hover {
         text-decoration: underline;
       }
 
       img {
-        margin-right: 10px;
+        margin-right: 1px;
+        scale: 0.8;
       }
 
     }
@@ -40,9 +39,9 @@ footer {
 
   .social__links {
     margin-left: auto;
-    // outline: $tool;
     width: calc(15% + 1vw);
     max-width: 230px;
+    min-width: 180px;
 
     ul {
         display: flex;

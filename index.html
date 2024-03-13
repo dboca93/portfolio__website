@@ -1,65 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dist/css/main.css">
-        <!--Google Fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Anta&family=Orbitron:wght@400..900&display=swap"
-            rel="stylesheet">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
     <title>Dilhan Boca Dev Portfolio</title>
 </head>
+
 <body>
     <header>
         <div class="logo">
-                <a href="">
-                    <span>d</span>boca.
-                </a>
+            <a href="index.html">
+                <span>d</span>boca.
+            </a>
         </div>
         <nav>
             <ul>
-                <li class="proj">Projects</li>
-                <li class="about">About Me</li>
+                <li class="proj">
+                    <a href="projects.html">Projects</a>
+                </li>
+                <li class="about">
+                    <a href="about.html">About Me</a>
+                </li>
             </ul>
         </nav>
         <a href="contact.html" class="contact">
             <img src="/img/icons8-communicate-32.png" alt="" class="h__none">
             <img src="/img/icons8-communicate-32__white.png" alt="" class="d__none">
-        Contact</a>
-    </header>
-    <main class="main__grid">
-        <article class="art__left">
-            <h2>
-                Hey, I'm Dilhan [pronouced Di-lan 🙌]
-            </h2>
-            <h1>
-                <span>Front</span> 
-                <span>end</span>
-                <span class="mh__two">Web Developer</span>
-            </h1>
-            <p>I'm an aspiring
-                frontend developer based in Australia. 
-                My goal is to build websites that you'll love ❤️
-            <span>Currently Studying:</span></p>
-            <div class="image__container">
-                <img src="/img/js.jpg" alt="Javascript Badge">
+            Contact</a>
+
+        <div class="hamburger__menu">
+            <div class="icon__container">
+                <svg class="with-icon_icon__MHUeb" data-testid="geist-icon" fill="none" height="24"
+                    shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"
+                    style="color:var(--geist-foreground);width:33px;height:33px">
+                    <path d="M21 10H7" />
+                    <path d="M21 6H3" />
+                    <path d="M21 14H3" />
+                    <path d="M21 18H7" />
+                </svg>
+
+
+                <ul class="dropdown__menu">
+                    <li><a href="projects.html">Projects</a>
+
+                        <svg id="cross" onclick="closeDropdown()"  class="with-icon_icon__MHUeb" data-testid="geist-icon" fill="none" height="24"
+                            shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"
+                            style="color:var(--geist-foreground);width:38px;height:38px">
+                            <circle cx="12" cy="12" r="10" fill="var(--geist-fill)" />
+                            <path d="M15 9l-6 6" stroke="var(--geist-stroke)" />
+                            <path d="M9 9l6 6" stroke="var(--geist-stroke)" />
+                        </svg>
+
+                    </li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
-            <a href="" class="get__touch"></a><a href="" class="latest__project"></a>
-        </article>
-        <div class="grid__right__container">
-            <div class="main__img__container">
-                <img src="/img/PROFILEpic.JPG" alt="" class="prof new__Width">
-            </div>
+
         </div>
+    </header>
+    <main class="index__main">
+
+        <section class="main__grid">
+            <article class="art__left">
+                <h2>
+                    Hey, I'm Dilhan [pronouced Dil-an 🙌]
+                </h2>
+                <h1>
+                    <span>Front</span>
+                    <span>end</span>
+                    <span class="mh__two">Web Developer</span>
+                </h1>
+                <p>I'm an aspiring
+                    frontend developer based in Australia.
+                    My goal is to build websites that you'll love ❤️
+                    <span>Currently Studying:</span>
+                </p>
+                <div class="image__container">
+                    <img src="/img/JavaScript-logo-new.png" alt="Javascript Badge">
+                </div>
+            </article>
+            <div class="grid__right__container">
+                <div class="main__img__container">
+                    <img src="/img/PROFILEpic.JPG" alt="" class="prof new__Width">
+                </div>
+            </div>
+
+</section>
+
     </main>
 
-    <footer>
+
+
+    <footer class="index__footer">
         <nav class="left__youtube">
             <a href="">
-                <img src="img/icons8-youtube-100.png" alt="">
-            Check out my coding channel on Youtube!
+                <img src="img/icons8-youtube-100.png" alt="Youtube Link">
+                Check out my coding channel on Youtube!
             </a>
         </nav>
 
@@ -75,7 +121,7 @@
                         <img src="img/4691329_codewars_icon.png" alt="">
                     </a>
                 </li>
-       
+
                 <li>
                     <a href="">
                         <img src="img/linkedin.png" alt="Linkedin">
@@ -92,7 +138,8 @@
     </footer>
 
 
-
     <script src="live.js"></script>
+    <script src="image__form.js"></script>
 </body>
+
 </html>

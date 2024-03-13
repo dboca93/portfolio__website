@@ -1,4 +1,4 @@
-console.log('hello'); 
+console.log('this')
 
 const project__Sel = document.querySelector('.proj'); 
 const about__Sel = document.querySelector('.about'); 
@@ -28,34 +28,60 @@ project__Sel.addEventListener('mouseleave', function() {
 })
 
 
-// select the image and change the dimensions during the mouseenter
-
-const img__C = document.querySelector('.main__img__container');
-const img__S = document.querySelector('.prof'); 
-
-img__C.addEventListener('mouseover', function() {
-    img__S.style.width = '580px'; 
-    img__S.style.height = '580px'; 
-})
-
-img__C.addEventListener('mouseout', function() {
-    img__S.style.width = ''; 
-    img__S.style.height = ''; 
-})
 
 
 function submitForm() {
     // Assuming 'form' is the ID of your form
-    var form = document.getElementById("form");
-    
-    // Perform any validation if needed
-    
-    // Simulating form submission
-    // Replace this with your actual form submission process
-    // For demonstration, here we're displaying a styled notification
+    // var form = document.getElementById("form");
     var notification = document.getElementById("notification");
     notification.style.display = "block";
-    
-    // Prevent the default form submission behavior
-    return false;
+
+    setTimeout(function() {
+        notification.style.display = "none";
+    }, 3000);
+
   }
+
+
+
+  // now I need a click event so that when my top-right 
+  // corner menu is clicked, the dropdown menu stays there 
+  // until the cross in the top right corner is clicked. 
+
+
+
+  const icon__S = document.querySelector('.icon__container'); 
+  const dropdown__S = document.querySelector('.dropdown__menu'); 
+  const cross__S = document.getElementById('cross') ; 
+
+  function showDropdown() {
+    dropdown__S.style.display = 'flex'; 
+  }
+
+  function hideDropdown() {
+    dropdown__S.style.display = 'none'; 
+  }
+
+  icon__S.addEventListener('mouseover', showDropdown); 
+  icon__S.addEventListener('mouseout', hideDropdown); 
+
+
+  // Event listener for click
+icon__S.addEventListener('click', function(event) {
+    icon__S.removeEventListener('mouseout', hideDropdown);
+    dropdown__S.style.display = 'flex'; 
+});
+
+// to close the dropdown menu; 
+
+cross__S.addEventListener('click', function(event) {
+    event.stopPropagation(); 
+    hideDropdown(); 
+})
+
+
+
+/* The following is so that when we visit the contact 
+page, we can visit the previous page via hitting the link
+in the top right corner and not just visit the home page*/
+

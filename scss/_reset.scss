@@ -9,6 +9,7 @@
     - The "symbol *" part is to solve Firefox SVG sprite bug
     - The "html" attribute is exclud, because otherwise a bug in Chrome breaks the CSS hyphens property (https://github.com/elad2412/the-new-css-reset/issues/36)
  */
+
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
     all: unset;
     display: revert;
@@ -19,6 +20,14 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100% !important;
+    margin: 0 !important; 
+    padding: 0 !important; 
 }
 
 /* Reapply the pointer cursor for anchor tags */
@@ -105,9 +114,19 @@ meter {
 /* body: custom*/ 
 
 body {
-    margin: 0;
-    padding: 0;
     overflow-x: hidden;
     min-height: 100vh; 
-    max-width: 100vw;
+    min-width: 18.75rem;   
 }
+
+/* Scrollbar Work Only */
+/* Define custom properties */
+
+header, main, footer {
+    min-width: 18.75rem;
+}
+
+main {
+    min-height: 77.5vh;
+}
+
