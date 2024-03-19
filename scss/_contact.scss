@@ -9,20 +9,36 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: calc(10px + 1vw) 0;
+  padding: calc(5px + 1vh) 0;
 }
 
 .container {
   min-width: 300px; 
 
   .form__disclaimer {
-    // outline: 5px solid red; 
     font-family: $font__second;
-    margin-top: 25px;
+    margin-top: calc(2px + 0.5vh); 
     text-align: center; 
+    p {
+      margin-bottom: 5px !important;
+    }
 
     span {
       font-size: 28px; 
+    }
+
+    ul {
+      border-top: $tool; 
+      width: max(60%, 280px);
+      display: flex;
+      margin-inline: auto; 
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      li {
+        font-size: clamp(12px, 3vw - 10px, 16px);
+      }
     }
   }
 

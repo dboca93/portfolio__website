@@ -30,18 +30,6 @@ project__Sel.addEventListener('mouseleave', function() {
 
 
 
-function submitForm() {
-    // Assuming 'form' is the ID of your form
-    // var form = document.getElementById("form");
-    var notification = document.getElementById("notification");
-    notification.style.display = "block";
-
-    setTimeout(function() {
-        notification.style.display = "none";
-    }, 3000);
-
-  }
-
 
 
   // now I need a click event so that when my top-right 

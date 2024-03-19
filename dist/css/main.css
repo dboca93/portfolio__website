@@ -612,7 +612,7 @@ footer .social__links ul li:nth-child(1) a img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: calc(10px + 1vw) 0;
+  padding: calc(5px + 1vh) 0;
 }
 
 .container {
@@ -624,11 +624,26 @@ footer .social__links ul li:nth-child(1) a img {
 }
 .container .form__disclaimer {
   font-family: "Anta", sans-serif;
-  margin-top: 25px;
+  margin-top: calc(2px + 0.5vh);
   text-align: center;
+}
+.container .form__disclaimer p {
+  margin-bottom: 5px !important;
 }
 .container .form__disclaimer span {
   font-size: 28px;
+}
+.container .form__disclaimer ul {
+  border-top: 1px solid black;
+  width: max(60%, 280px);
+  display: flex;
+  margin-inline: auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .form__disclaimer ul li {
+  font-size: clamp(12px, 3vw - 10px, 16px);
 }
 .container .notification {
   background-color: rgb(252, 252, 253);
