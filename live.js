@@ -15,8 +15,6 @@ about__Sel.addEventListener('mouseleave', function() {
     project__Sel.style.color = `rgb(36, 38, 47)`; 
 })
 
-
-
 // good, we create some event listeners for the opp
 
 project__Sel.addEventListener('mouseenter', function() {
@@ -26,10 +24,6 @@ project__Sel.addEventListener('mouseenter', function() {
 project__Sel.addEventListener('mouseleave', function() {
     about__Sel.style.color = `rgb(36, 38, 47)`; 
 })
-
-
-
-
 
 
   // now I need a click event so that when my top-right 
